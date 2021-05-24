@@ -8,3 +8,5 @@ chmod +x index.sh
 ./index.sh
 
 exit
+
+#USE BOARD COMMAND TO RUN THE GAME
