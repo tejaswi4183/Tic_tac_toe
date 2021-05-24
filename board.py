@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 l="abcdefghi"
 board={"a":"a","b":"b","c":"c","d":"d","e":"e","f":"f","g":"g","h":"h","i":"i"}
 print(" a | b | c \n---+---+---\n d | e | f \n---+---+---\n g | h | i ")
@@ -61,7 +61,7 @@ while(i<=9):
 	print("select a place a-i to enter\"",a)
 	b=input()
 	
-	if((board["b"]!="x")  or (board["b"]!="o")):
+	if((board[b]!="x")  and (board[b]!="o")):
 	
 		board[b]=a
 		i=i+1
@@ -69,9 +69,11 @@ while(i<=9):
 			rc=win(board)
 			if(rc==1):
 				break
-			else:
-				print("not won")
+		
 		prin(board)
+		if(i==9 and rc==0):
+			print("No one won the game")
+			
 		if(a=="x"):
 			a="o"
 					
