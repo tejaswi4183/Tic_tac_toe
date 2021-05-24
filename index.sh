@@ -7,4 +7,4 @@ alias 'board'='python3 board'
 
 
 
-#sudo rm -r Tic_tac_toe
+sudo rm -r Tic_tac_toe
