@@ -1,5 +1,10 @@
 #!/bin/bash
-mv python3 board.py board
-chmod +x board
-sudo cp board /usr/bin/board
-sudo rm -r ../Tic_tac_toe
+mv 'board.py' 'board'
+
+sudo chmod +x 'board'
+sudo cp 'board' '/usr/bin/'
+alias 'board'='python3 board'
+
+
+
+#sudo rm -r Tic_tac_toe
